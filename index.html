@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>ChatGPT</h2>
+        <button onclick="newChat()">+ New Chat</button>
+        <p>Today</p>
+        <div class="history">My First Chat</div>
+        <div class="history">HTML Learning</div>
+    </div>
+
+    <div class="main">
+        <header>ChatGPT</header>
+
+        <div class="chat" id="chat">
+            <h1>What can I help with?</h1>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="message"
+                   placeholder="Message ChatGPT..."
+                   onkeydown="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">↑</button>
+        </div>
+
+        <p class="footer">ChatGPT Clone • Demo Project</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
